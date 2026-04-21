@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SmartPrompt AI is a modern landing page and interactive prompt generator prototype built with HTML, CSS and JavaScript.">
+  <title>SmartPrompt AI | Prompt Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-glow page-glow--one"></div>
+  <div class="page-glow page-glow--two"></div>
+
+  <header class="header">
+    <a href="#home" class="brand">
+      <span class="brand__icon">SP</span>
+      <span class="brand__text">SmartPrompt AI</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="navMenu">
+      <a href="#features">Features</a>
+      <a href="#generator">Generator</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <button class="btn btn--ghost btn--small" id="navDemoBtn" type="button">Request Demo</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero__content">
+        <span class="eyebrow">AI Prompt Toolkit</span>
+        <h1>Create better prompts in seconds.</h1>
+        <p>
+          SmartPrompt helps marketers, creators, developers and operators build sharper AI prompts with guided templates,
+          prompt optimization and instant copy-ready output.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#generator" class="btn btn--primary">Generate Prompt</a>
+          <button class="btn btn--ghost" id="watchPreviewBtn" type="button">See Live Preview</button>
+        </div>
+
+        <div class="hero__stats">
+          <div>
+            <strong>40+</strong>
+            <span>Prompt templates</span>
+          </div>
+          <div>
+            <strong>4</strong>
+            <span>Professional categories</span>
+          </div>
+          <div>
+            <strong>1-click</strong>
+            <span>Copy workflow</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="preview-card">
+          <div class="preview-card__top">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+
+          <div class="preview-card__body">
+            <div class="badge">Optimized Output</div>
+            <h3>Marketing Campaign Prompt</h3>
+            <p>
+              Act as a senior growth strategist. Build a 14-day launch plan for a new SaaS product, including channel ideas,
+              positioning, email hooks, short-form video angles and CTA suggestions.
+            </p>
+            <div class="preview-card__tags">
+              <span>Marketing</span>
+              <span>SaaS</span>
+              <span>Growth</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="features">
+      <div class="section-heading">
+        <span class="eyebrow">Why SmartPrompt</span>
+        <h2>Built to turn vague ideas into clear instructions.</h2>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <h3>Ready-made templates</h3>
+          <p>Start from structured prompt frameworks for content, coding, sales and operations.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Fast refinements</h3>
+          <p>Improve clarity, tone and scope with guided prompt enhancements in one workflow.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Copy-ready output</h3>
+          <p>Generate clean prompts you can copy instantly and use in your favorite AI tools.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container generator" id="generator">
+      <div class="section-heading section-heading--left">
+        <span class="eyebrow">Interactive Demo</span>
+        <h2>Generate a professional prompt.</h2>
+        <p class="section-text">Choose a category, add a goal and let the interface simulate a tailored AI-ready prompt.</p>
+      </div>
+
+      <div class="generator-grid">
+        <form class="generator-form" id="promptForm">
+          <label>
+            Category
+            <select id="category">
+              <option value="marketing">Marketing</option>
+              <option value="coding">Coding</option>
+              <option value="sales">Sales</option>
+              <option value="operations">Operations</option>
+            </select>
+          </label>
+
+          <label>
+            Objective
+            <input type="text" id="goal" placeholder="Example: launch a new mobile app" maxlength="80">
+          </label>
+
+          <label>
+            Tone
+            <select id="tone">
+              <option value="professional">Professional</option>
+              <option value="direct">Direct</option>
+              <option value="creative">Creative</option>
+              <option value="analytical">Analytical</option>
+            </select>
+          </label>
+
+          <div class="generator-form__actions">
+            <button type="submit" class="btn btn--primary">Generate Prompt</button>
+            <button type="button" class="btn btn--ghost" id="clearPromptBtn">Reset</button>
+          </div>
+        </form>
+
+        <div class="output-card">
+          <div class="output-card__header">
+            <h3>Generated Prompt</h3>
+            <span class="status-pill" id="statusPill">Ready</span>
+          </div>
+
+          <div class="loading" id="loadingState" hidden>
+            <span></span><span></span><span></span>
+            <p>Optimizing your prompt...</p>
+          </div>
+
+          <textarea id="promptOutput" readonly>Choose your category and objective to generate a polished prompt.</textarea>
+
+          <div class="output-card__actions">
+            <button class="btn btn--secondary" id="copyPromptBtn" type="button">Copy Prompt</button>
+            <button class="btn btn--ghost" id="samplePromptBtn" type="button">Use Example</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container pricing" id="pricing">
+      <div class="section-heading">
+        <span class="eyebrow">Simple Pricing</span>
+        <h2>Choose a plan that matches your workflow.</h2>
+      </div>
+
+      <div class="pricing-toggle">
+        <button class="toggle-option toggle-option--active" id="monthlyBtn" type="button">Monthly</button>
+        <button class="toggle-option" id="yearlyBtn" type="button">Yearly</button>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card">
+          <span class="price-card__label">Starter</span>
+          <h3>For creators</h3>
+          <p class="price" data-monthly="$9" data-yearly="$79">$9</p>
+          <ul>
+            <li>10 prompt templates</li>
+            <li>1-click copy</li>
+            <li>Email onboarding</li>
+          </ul>
+          <button class="btn btn--ghost plan-btn" data-plan="Starter" type="button">Start Free Trial</button>
+        </article>
+
+        <article class="price-card price-card--featured">
+          <span class="price-card__label">Pro</span>
+          <h3>For teams</h3>
+          <p class="price" data-monthly="$19" data-yearly="$169">$19</p>
+          <ul>
+            <li>40+ prompt templates</li>
+            <li>Priority prompt suggestions</li>
+            <li>Workspace-ready flows</li>
+          </ul>
+          <button class="btn btn--primary plan-btn" data-plan="Pro" type="button">Choose Pro</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container faq" id="faq">
+      <div class="section-heading section-heading--left">
+        <span class="eyebrow">FAQ</span>
+        <h2>Common questions about the product.</h2>
+      </div>
+
+      <div class="faq-list">
+        <article class="faq-item">
+          <button class="faq-question" type="button">Is SmartPrompt connected to a real AI model?</button>
+          <div class="faq-answer">
+            <p>This portfolio version simulates a product workflow with front-end interactions and user feedback.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button">Can I use the generated prompts in other tools?</button>
+          <div class="faq-answer">
+            <p>Yes. The generated text is copy-ready and designed to be pasted into your preferred AI platform.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button">Does the email form really submit data?</button>
+          <div class="faq-answer">
+            <p>Yes. The waitlist form is integrated with Formspree and sends real submissions without reloading the page.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container contact" id="contact">
+      <div class="contact-card">
+        <div>
+          <span class="eyebrow">Stay Updated</span>
+          <h2>Join the waitlist for product updates.</h2>
+          <p>Tell us how you plan to use SmartPrompt and join the early-access list with a real submission flow.</p>
+        </div>
+
+        <form
+          class="contact-form smart-form"
+          id="waitlistForm"
+          action="https://formspree.io/f/xzdyjdyg"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="New SmartPrompt Lead">
+
+          <input
+            type="text"
+            id="nameInput"
+            name="name"
+            placeholder="Your name"
+            required
+          >
+
+          <input
+            type="email"
+            id="emailInput"
+            name="email"
+            placeholder="Your email"
+            required
+          >
+
+          <select id="goalSelect" name="goal" required>
+            <option value="">Main Goal</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Sales">Sales</option>
+            <option value="Content Creation">Content Creation</option>
+            <option value="Coding">Coding</option>
+            <option value="Productivity">Productivity</option>
+          </select>
+
+          <textarea
+            id="messageInput"
+            name="message"
+            rows="4"
+            placeholder="How would you use SmartPrompt?"
+          ></textarea>
+
+          <label class="checkbox-line" for="consentInput">
+            <input
+              type="checkbox"
+              id="consentInput"
+              name="updates_consent"
+              value="agreed"
+              required
+            >
+            <span>I agree to receive updates about SmartPrompt.</span>
+          </label>
+
+          <button type="submit" class="btn btn--primary">Join Waitlist</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© 2026 SmartPrompt AI. Portfolio concept built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
