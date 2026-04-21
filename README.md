@@ -102,15 +102,16 @@ This project was built to:
 
 ## 📸 Preview
 
-![SmartPrompt Preview](./assets/preview.png)
+<img width="1888" height="956" alt="image" src="https://github.com/user-attachments/assets/c8e9c92c-4169-4e65-ba62-913e4d135ab1" />
+<img width="1897" height="987" alt="image" src="https://github.com/user-attachments/assets/88667270-94f8-4002-8651-0f78768e9271" />
+<img width="1897" height="958" alt="image" src="https://github.com/user-attachments/assets/1ee4cd58-a3c0-40f6-9e49-1a61d9ae0730" />
+
 
 ---
 
 ## 🌐 Live Demo
 
-👉 https://luuckysilva.github.io/smartprompt-ai/
-
-> (replace if needed)
+👉 https://luuckysilva.github.io/smartprompt-ai-landing-page/
 
 ---
 
