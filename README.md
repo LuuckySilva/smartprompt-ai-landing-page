@@ -1,52 +1,151 @@
 # SmartPrompt AI Landing Page
 
-Modern responsive landing page for an AI prompt generation product, built with HTML, CSS and JavaScript.
+Modern responsive landing page for an AI prompt generation product, built with **HTML5**, **CSS3** and **JavaScript**.
 
-## About the project
+## 🚀 About the Project
 
-SmartPrompt AI is a portfolio concept that simulates a SaaS-style product focused on creating and improving prompts for different professional use cases. The project was designed to look like a real digital product landing page, while also including interactive front-end features that increase its presentation value.
+SmartPrompt AI is a portfolio concept that simulates a real SaaS product focused on helping users create better prompts for AI tools.
 
-## Technologies used
+The project was designed to combine:
+
+- Strong visual presentation  
+- Responsive front-end structure  
+- Realistic product sections  
+- Interactive JavaScript features  
+- Functional lead capture system
+
+It represents a modern product landing page that could be used for startups, SaaS products or AI tools.
+
+---
+
+## 🛠 Technologies Used
 
 - HTML5
 - CSS3
-- JavaScript
+- JavaScript (Vanilla JS)
+- Formspree (real form submissions)
 
-## Main features
+---
 
-- Responsive layout for desktop, tablet and mobile
-- Sticky header with mobile navigation menu
-- Interactive prompt generator with categories and tone selection
-- Loading state for prompt generation
-- Copy-to-clipboard action
-- Pricing switcher between monthly and yearly plans
-- FAQ accordion
-- Waitlist form with validation and feedback messages
-- Toast notifications for user actions
+## ✨ Main Features
 
-## Project goals
+### 🎯 Product Landing Page
 
-- Practice building a polished landing page for a digital product
-- Improve visual hierarchy and layout structure
-- Add useful JavaScript interactions to increase project value
-- Create a more professional portfolio piece for recruiters and clients
+- Premium hero section
+- Product presentation blocks
+- Strong CTA buttons
+- Modern UI design
 
-## Future improvements
+### 🤖 Prompt Generator
 
-- Connect the forms to a real backend or email service
-- Add authentication and user dashboard screens
-- Integrate with an AI API for real prompt generation
-- Add animations and deeper product sections
+Interactive prompt generator where users can:
 
-## Preview
+- Choose category
+- Define objective
+- Select tone
+- Generate prompts dynamically
+- Copy prompts instantly
 
-Add a project screenshot here after publishing the final version.
+### 💳 Pricing Section
 
-## Deploy
+- Monthly / Yearly pricing toggle
+- Responsive pricing cards
+- CTA plan buttons
 
-[View project online](ADD_YOUR_DEPLOY_LINK_HERE)
+### ❓ FAQ Section
 
-## Contact
+Accordion FAQ with smooth interactions.
 
-- [LinkedIn](https://www.linkedin.com/in/lucky-silva/)
-- Email: lukasantonyo@gmail.com
+### 📩 Real Waitlist Form
+
+Integrated with **Formspree**, allowing real submissions.
+
+Fields included:
+
+- Name
+- Email
+- Main Goal
+- Message
+- Consent checkbox
+
+### 🔔 UX Enhancements
+
+- Toast notifications
+- Loading states
+- Mobile menu
+- Smooth scroll
+- Responsive design
+
+---
+
+## 📱 Responsiveness
+
+Fully optimized for:
+
+- Desktop
+- Tablet
+- Mobile devices
+
+---
+
+## 🎯 Project Goals
+
+This project was built to:
+
+- Practice front-end architecture
+- Create a realistic SaaS interface
+- Improve JavaScript interactivity
+- Demonstrate UI/UX thinking
+- Increase portfolio quality for recruiters and clients
+
+---
+
+## 📸 Preview
+
+![SmartPrompt Preview](./assets/preview.png)
+
+---
+
+## 🌐 Live Demo
+
+👉 https://luuckysilva.github.io/smartprompt-ai/
+
+> (replace if needed)
+
+---
+
+## 📈 Why This Project Matters
+
+This project demonstrates practical skills in:
+
+- Semantic HTML structure
+- Advanced CSS layouts
+- Responsive interfaces
+- DOM manipulation
+- API/Form integrations
+- Conversion-focused design
+
+---
+
+## 🔮 Future Improvements
+
+- Real AI API integration
+- User authentication
+- Dashboard area
+- Prompt history storage
+- Dark / Light mode toggle
+- Animations with GSAP
+
+---
+
+## 👨‍💻 Author
+
+**Lucas Antonio Silva**
+
+- LinkedIn: https://www.linkedin.com/in/lucky-silva/
+- GitHub: https://github.com/LuuckySilva
+
+---
+
+## ⭐ Final Portfolio Rating
+
