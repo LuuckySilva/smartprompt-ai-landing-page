@@ -143,7 +143,7 @@ This project demonstrates practical skills in:
 
 **Lucas Antonio Silva**
 
-- LinkedIn: https://www.linkedin.com/in/lucky-silva/
+- LinkedIn: linkedin.com/in/olucas-silvaa
 - GitHub: https://github.com/LuuckySilva
 
 ---
